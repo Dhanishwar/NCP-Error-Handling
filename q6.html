@@ -1,0 +1,27 @@
+<html>
+    <body id="id"></body>
+    <script>
+        for (var i = 0; i < 5; i++) {
+            for (var j = 60; j <= 100; j++) {
+                console.log("Grade for " + j + " marks is " + assignGrade(j));
+            }
+            console.log();
+            console.log();
+            console.log();
+        }
+
+        function assignGrade(marks) {
+            if (marks < 60) return "F";
+
+            if (marks < 70) return "D";
+
+            if (marks < 80) return "C";
+
+            if (marks < 90) return "B";
+
+            if (marks <= 100) return "A";
+
+            return "Invalid";
+        }
+    </script>
+</html>

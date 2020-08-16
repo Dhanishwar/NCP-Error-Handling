@@ -1,0 +1,21 @@
+<html>
+    <body id="id"></body>
+    <script>
+        var st = prompt("Enter string.");
+
+        function resort(string) {
+            try {
+                w = st.split(" ");
+            } catch {
+                console.log("Input is not String");
+                return "Input is not String";
+            }
+            console.log(w);
+            w.sort();
+            w.reverse();
+            return w;
+        }
+
+        document.getElementById("id").innerText = resort(st);
+    </script>
+</html>
